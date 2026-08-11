@@ -21,16 +21,38 @@ void reverseArr(int arr[],int size) {
     }
 }
 
+// -----------Zeroes And Ones------------------------------------->>>>
+ void printZeroesAndOnes(int arr[],int n) {
+     int zeroCount = 0;
+     int oneCount = 0;
+
+     for(int i=0; i<n; i++) {
+        int currentElement = arr[i];
+        if(currentElement == 0) {
+            zeroCount++;
+        }
+        if(currentElement == 1) {
+            oneCount++;
+        }
+     }
+     cout<<"totalZeroCount" <<zeroCount<<endl;
+     cout<<"totalOnesCount" <<oneCount<<endl;
+ }
 
 int main() {
-   int arr[] = {4,2,7,8,1,2,5};
-    int size = 7;
-    reverseArr(arr,size);
+   int arr[] = {0,1,1,1,0,0,1};
+    int n = 7;
+printZeroesAndOnes(arr,n);
 
-    for(int i=0; i<size;i++) {
-        cout<<arr[i]<<" ";
-    }
-    cout<<endl;
+
+
+
+//     reverseArr(arr,size);
+
+//     for(int i=0; i<size;i++) {
+//         cout<<arr[i]<<" ";
+//     }
+//     cout<<endl;
 
 
     // int target = 8;
