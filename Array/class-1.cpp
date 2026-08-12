@@ -39,11 +39,24 @@ void reverseArr(int arr[],int size) {
      cout<<"totalOnesCount" <<oneCount<<endl;
  }
 
-int main() {
-   int arr[] = {0,1,1,1,0,0,1};
-    int n = 7;
-printZeroesAndOnes(arr,n);
+//  Extreme printing-----------------------------
+void extremePrinting(int arr[],int n) {
+    int i = 0;
+    int j = n-1;
 
+    while(i<=j) {
+        cout<<arr[i]<<" ";
+        i++;
+        cout<<arr[j]<<" ";
+        j--;
+    }
+}
+
+int main() {
+   int arr[] = {10,20,30,40,50,60};
+    int n = 6;
+// printZeroesAndOnes(arr,n);
+ extremePrinting(arr,n);
 
 
 
