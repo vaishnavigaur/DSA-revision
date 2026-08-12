@@ -51,12 +51,22 @@ void extremePrinting(int arr[],int n) {
         j--;
     }
 }
+// --single no.---------------------------------------
+int findUniqueNo(int arr[],int n) {
+    int ans = 0;
+    for(int i=0; i<n; i++) {
+        ans = ans ^ arr[i];
+    }
+    return ans;
+}
 
 int main() {
-   int arr[] = {10,20,30,40,50,60};
-    int n = 6;
+   int arr[] = {2,2,1};
+    int n = 3;
+   int ans =  findUniqueNo(arr,n);
+   cout<<"Unique no is : " <<ans<<" ";
 // printZeroesAndOnes(arr,n);
- extremePrinting(arr,n);
+//  extremePrinting(arr,n);
 
 
 
