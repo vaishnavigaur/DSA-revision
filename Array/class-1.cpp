@@ -60,11 +60,33 @@ int findUniqueNo(int arr[],int n) {
     return ans;
 }
 
+// --------------------------0's , 1's , 2's----------------------------------------------
+int sortNo(int arr[], int n) {
+    int i=0; 
+    int j=0;
+    int k=n- 1;
+    while(j<=k) {
+        if(j==1) {
+            j++;
+        }
+        else if(j==2) {
+            swap(arr[j], arr[k]);
+            k--;
+        }
+        else{
+            swap(arr[j], arr[i]);
+            i++;
+            j++;
+        }
+    }
+}
 int main() {
-   int arr[] = {2,2,1};
-    int n = 3;
-   int ans =  findUniqueNo(arr,n);
-   cout<<"Unique no is : " <<ans<<" ";
+   int arr[] = {0,0,1,2,1,2};
+    int n = 6;
+     int ans = sortNo(arr,n);
+     cout<<ans<<endl;
+//    int ans =  findUniqueNo(arr,n);
+//    cout<<"Unique no is : " <<ans<<" ";
 // printZeroesAndOnes(arr,n);
 //  extremePrinting(arr,n);
 
