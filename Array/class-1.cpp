@@ -80,11 +80,20 @@ int sortNo(int arr[], int n) {
         }
     }
 }
+// ------------------Print all Pairs----------------
+void printAllPairs(int arr[],int n) {
+    for(int i=0; i<n; i++) {
+        for(int j=0; j<n; j++) {
+            cout<<arr[i]<<","<<arr[j]<<endl;
+        }
+    }
+}
 int main() {
-   int arr[] = {0,0,1,2,1,2};
+   int arr[] = {10,20,30,40,50,60};
     int n = 6;
-     int ans = sortNo(arr,n);
-     cout<<ans<<endl;
+    printAllPairs(arr,n);
+    //  int ans = sortNo(arr,n);
+    //  cout<<ans<<endl;
 //    int ans =  findUniqueNo(arr,n);
 //    cout<<"Unique no is : " <<ans<<" ";
 // printZeroesAndOnes(arr,n);
