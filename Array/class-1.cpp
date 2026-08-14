@@ -88,10 +88,37 @@ void printAllPairs(int arr[],int n) {
         }
     }
 }
+// ------------------Two pair sum-----------------
+void pairSum(int arr[],int n) {
+    int count = 0;
+    for(int i=0; i<n; i++) {
+        for(int j=0; j<n;j++) {
+            for(int k=0; k<n;k++){
+               cout<<arr[i]<<" "<<arr[j]<<" "<<arr[j]<<endl;
+               count++;
+
+            }
+          
+            }
+           
+        };
+        cout<<count<<endl;
+    }
+    
+
 int main() {
    int arr[] = {10,20,30,40,50,60};
     int n = 6;
-    printAllPairs(arr,n);
+  pairSum(arr,n);
+    // bool ans =  pairSum(arr,n,800);
+    // if(ans == true) {
+    //     cout<<"pair Found"<<endl;
+    // }
+    // else{
+    //     cout<<"pair Not found"<<endl;
+    // }
+  
+    // printAllPairs(arr,n);
     //  int ans = sortNo(arr,n);
     //  cout<<ans<<endl;
 //    int ans =  findUniqueNo(arr,n);
