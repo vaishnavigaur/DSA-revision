@@ -105,6 +105,15 @@ void pairSum(int arr[],int n) {
         cout<<count<<endl;
     }
     
+    int majorityElement(vector<int>& nums) {
+        int n = nums.size();
+        int count1 = 0;
+        int maj1 = NULL;
+
+        int count2 = 1;
+        int maj2 = NULL;
+    }
+};
 
 int main() {
    int arr[] = {10,20,30,40,50,60};
