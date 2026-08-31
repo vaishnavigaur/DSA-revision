@@ -110,7 +110,7 @@ void pairSum(int arr[],int n) {
         int count1 = 0;
         int maj1 = NULL;
 
-        int count2 = 1;
+        int count2 = 4;
         int maj2 = NULL;
     }
 };
