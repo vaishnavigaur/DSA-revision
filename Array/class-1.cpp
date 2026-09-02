@@ -184,7 +184,7 @@ public:
                  count++;
             }
              else
-            count = 0;
+            count = 1;
             ans = max(ans,count);
            
           };
