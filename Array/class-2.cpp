@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+// int maxSubarray(int arr[], int n) {
+    
+// }
+
+int main() {
+  int arr[5] = {1,2,3,4,5};
+   int n = 5;
+//    int ans = maxSubarray(arr, n);
+//    cout<<ans<<endl;
+
+for(int st=0; st<n; st++) {
+        for(int end= st; end<n; end++) {
+            for(int i=st; i<=end; i++) {
+                cout<<arr[i];
+            }
+            cout<<" ";
+        }
+        cout<<endl;
+    }
+
+    return 0;
+}
