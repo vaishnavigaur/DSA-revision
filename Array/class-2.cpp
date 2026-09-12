@@ -144,7 +144,7 @@ public:
         };
     }
 };
-
+// -------------count value with equally spaced occ 1-------------------
 class Solution {
 public:
     int countSquares(vector<vector<int>>& matrix) {
@@ -166,6 +166,7 @@ public:
                 }
             }
             return result;
-        }
+        };
     }
 };
+
