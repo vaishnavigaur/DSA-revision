@@ -170,3 +170,37 @@ public:
     }
 };
 
+// ---------------------------------------cyclic shift row and col-------------------------------
+class Solution {
+public:
+    vector<vector<int>> cyclicShift(int n, vector<vector<int>>& grid, vector<int>& rowShift, vector<int>& colShift) {
+        for(int i=0; i<n; i++) {
+            int k = rowShift[i]%n;
+            if(k==0) continue;
+
+            vector<int>newRow(n);
+            for(int j=0; j<n; j++) {
+                newRow[j] = grid[i][(j+k)%n];
+            }
+            grid[i] = newRow;
+        }
+
+        for(int j=0; j<n; j++) {
+            int k = colShift[j]%n;
+            if(k==0) continue;
+
+            vector<int >col(n);
+            for(int i=0; i<n; i++) {
+                col[i] = grid[i][j];
+                
+            }
+            vector<int>shifted(n);
+            for(int i=0; i<n; i++) {
+                shifted[i] = col[(i+k) % n];
+            }
+            for(int i=0; i<n; i++) grid[i][j] = shifted[i];
+        }
+        return grid;
+        
+    };
+};
