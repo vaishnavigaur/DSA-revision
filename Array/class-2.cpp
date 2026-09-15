@@ -172,7 +172,7 @@ public:
 
 // ---------------------------------------cyclic shift row and col-------------------------------
 class Solution {
-public:
+public
     vector<vector<int>> cyclicShift(int n, vector<vector<int>>& grid, vector<int>& rowShift, vector<int>& colShift) {
         for(int i=0; i<n; i++) {
             int k = rowShift[i]%n;
